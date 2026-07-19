@@ -14,18 +14,27 @@ keywords: "blog, data engineering, apache spark, kafka, streaming, databricks, d
 
         <section class="blog-content">
             <div class="container">
+                {% if site.tags.size > 0 %}
+                <p class="tags-browse"><a href="{{ '/tags.html' | relative_url }}">$ ls --tags</a></p>
+                {% endif %}
                 {% if site.posts.size > 0 %}
                 <div class="blog-list">
                     {% for post in site.posts %}
                     <article class="blog-post">
                         <div class="post-meta">
                             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                            {% if post.category %}<span class="post-category">{{ post.category }}</span>{% endif %}
                         </div>
                         <h2 class="post-title">
                             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
                         </h2>
                         <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 200 }}</p>
+                        {% if post.tags and post.tags.size > 0 %}
+                        <div class="post-tags">
+                            {% for tag in post.tags %}
+                            <a class="tag" href="{{ '/tags.html' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
                         <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
                     </article>
                     {% endfor %}

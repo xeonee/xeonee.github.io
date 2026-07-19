@@ -1,0 +1,42 @@
+---
+layout: default
+nav: blog
+title: "Tags — Amardeep Chaubey"
+description: "Browse blog posts by tag — Spark, Kafka, streaming, and more."
+keywords: "blog tags, spark, kafka, streaming, databricks, performance"
+---
+        <section class="page-header">
+            <div class="container">
+                <h1>Tags</h1>
+                <p>Browse posts by topic. Pick a tag to see everything filed under it.</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                {% assign sorted_tags = site.tags | sort %}
+                {% if sorted_tags.size > 0 %}
+                <div class="tag-cloud">
+                    {% for t in sorted_tags %}
+                    <a class="tag" href="#{{ t[0] | slugify }}">{{ t[0] }} <span class="tag-count">{{ t[1].size }}</span></a>
+                    {% endfor %}
+                </div>
+
+                {% for t in sorted_tags %}
+                <div class="tag-section" id="{{ t[0] | slugify }}">
+                    <h2>{{ t[0] }}</h2>
+                    <ul class="tag-posts">
+                        {% for post in t[1] %}
+                        <li>
+                            <span class="tag-post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p class="post-excerpt">No tags yet — they'll show up here as posts are published.</p>
+                {% endif %}
+            </div>
+        </section>

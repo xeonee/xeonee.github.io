@@ -2,7 +2,7 @@
 layout: post
 title: "Taming Spark Data Skew with Salting"
 date: 2026-07-19 09:00:00 +0100
-category: Spark
+tags: [Spark, Performance]
 read_time: "6 min read"
 description: "A practical look at why data skew wrecks Spark jobs — and how salting keys spreads the load without changing your results."
 ---
