@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Your p99 Latency Lies to You"
-date: 2026-07-20 09:00:00 +0100
+date: 2026-07-19 07:30:00 +0100
 tags: [Performance, Streaming, Kafka]
 read_time: "5 min read"
 description: "Averages hide pain and single percentiles hide more. A short guide to reading latency honestly in streaming systems."
