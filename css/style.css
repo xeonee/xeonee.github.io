@@ -1221,7 +1221,7 @@ a:focus-visible {
 }
 
 .tag::before {
-    content: "#";
+    content: "#\00A0";
     color: var(--text-mut);
 }
 
@@ -1274,7 +1274,7 @@ a:focus-visible {
 }
 
 .tag-section h2::before {
-    content: "#";
+    content: "#\00A0";
     color: var(--green);
 }
 
