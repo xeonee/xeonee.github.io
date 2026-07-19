@@ -1,0 +1,17 @@
+# Jekyll build output & cache
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+vendor/
+.bundle/
+Gemfile.lock
+
+# Editor / OS
+.claude/
+.DS_Store
+
+# Source resume (the generated PDF is committed, the docx is not)
+*.docx

@@ -1,0 +1,28 @@
+<header class="header">
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="{{ '/index.html' | relative_url }}">amardeep</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ '/index.html' | relative_url }}" class="nav-link{% if page.nav == 'home' %} active{% endif %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/about.html' | relative_url }}" class="nav-link{% if page.nav == 'about' %} active{% endif %}">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/resume.html' | relative_url }}" class="nav-link{% if page.nav == 'resume' %} active{% endif %}">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/blog.html' | relative_url }}" class="nav-link{% if page.nav == 'blog' %} active{% endif %}">Blog</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,196 @@
+---
+layout: default
+nav: resume
+title: "Resume — Amardeep Chaubey"
+description: "Staff Data Engineer, 15+ years in distributed data platforms and real-time streaming."
+keywords: "resume, CV, data engineer, apache spark, kafka, databricks, streaming, distributed systems"
+---
+        <section class="page-header">
+            <div class="container">
+                <div class="resume-header">
+                    <h1>Amardeep Chaubey</h1>
+                    <p class="resume-title">Staff Data Engineer</p>
+                    <div class="resume-contact">
+                        <span>{{ site.email }}</span>
+                        <span>•</span>
+                        <span>London, UK</span>
+                    </div>
+                    <div class="resume-actions">
+                        <a href="{{ '/Amardeep_Chaubey_CV_2026.pdf' | relative_url }}" class="btn btn-outline">Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-content">
+            <div class="container">
+                <div class="resume-section">
+                    <h2>Professional Summary</h2>
+                    <p>
+                        Staff Data Engineer with 15+ years architecting and leading large-scale distributed data
+                        platforms at Warner Media, Microsoft, and JPMorgan Chase. Expert in building production
+                        streaming systems processing 10TB+/day at sub-100ms latency using Spark, Kafka, and
+                        cloud-native architectures. Track record of driving strategic cost optimization
+                        ($700K+/year saved), leading cross-functional migrations affecting 15+ teams, and building
+                        reusable frameworks adopted across organizations. Deep expertise in Spark internals,
+                        real-time data architectures, and cloud data platform evolution (AWS, Databricks, Azure).
+                    </p>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Key Achievements</h2>
+                    <ul class="experience-details">
+                        <li>Led cross-functional data platform migrations impacting 15+ teams and 80+ production pipelines with zero downtime</li>
+                        <li>Built and scaled real-time streaming systems processing 10TB+/day with &lt;100ms p99 latency serving 50M+ users</li>
+                        <li>Drove $700K+ in annual cost savings through platform optimization initiatives</li>
+                        <li>Architected reusable frameworks reducing time-to-production by 85% for streaming use cases</li>
+                        <li>Established technical authority across 40+ engineers in Spark, Kafka, and cloud data platforms</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Experience</h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Senior Data Engineer</h3>
+                                <span class="company">Warner Media – Discovery</span>
+                                <span class="period">London, UK · Feb 2022 – Present</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Led enterprise migration from Snowflake to Databricks — framework and governance model adopted by 4 teams (15+ engineers, 80+ pipelines); 50% cost reduction ($500K/yr) and 3x query performance.</li>
+                                <li>Architected the HBO Max AdTech data platform serving 50M+ daily users across 60+ countries; Lambda architecture (Databricks + Kafka/Spark Structured Streaming) processing 5TB/day at 99.95% SLA, cutting data latency from 4 hours to 15 minutes and enabling $5M+ in targeted ad revenue.</li>
+                                <li>Designed the RTCM real-time streaming framework — 500K events/sec at &lt;100ms p99, exactly-once, auto-scaling; adopted by 3 teams (12+ pipelines), cutting time-to-production from 6 weeks to 1.</li>
+                                <li>Drove a Spark performance program (data-skew salting, broadcast joins, AQE): 30% cluster cost cut ($200K/yr), 40% faster jobs, 95% fewer OOM errors; trained 20+ engineers.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Senior Software Engineer</h3>
+                                <span class="company">Microsoft</span>
+                                <span class="period">Bangalore, India · Jun 2021 – Dec 2021</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Core contributor to the Spark execution engine powering Azure Data Factory (4000+ enterprise clients, 100+ PB/month).</li>
+                                <li>Built a custom Spark Listener framework streaming 1M+ metrics/min to the ADF UI at &lt;5s latency, cutting support tickets by 35%.</li>
+                                <li>Designed a high-cardinality metrics aggregation pipeline (HyperLogLog, T-Digest) holding sub-second queries at 10x peak load.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Senior Data Engineer</h3>
+                                <span class="company">JPMorgan Chase &amp; Co</span>
+                                <span class="period">Bangalore, India · Mar 2020 – Apr 2021</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Led a near-real-time risk analytics platform processing 2M+ trades/day from 15+ sources using Spark Structured Streaming + Kafka with event-time aggregations, stream-stream joins, and exactly-once multi-sink writes.</li>
+                                <li>Cut risk-calculation latency from 30 minutes to under 2 — 15x faster decisions — supporting $500B+ in daily trading volume.</li>
+                                <li>Migrated legacy DStream pipelines to Structured Streaming; an Avro schema registry gave 40% compression and safe schema evolution. Playbook adopted by 3 teams.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Technical Lead</h3>
+                                <span class="company">Emids Technologies</span>
+                                <span class="period">Bangalore, India · May 2016 – Jun 2019</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Architected the Enterprise Data Hub — a multi-tenant Cassandra healthcare data lake serving 8 insurers, 100M+ patient records, and 500GB/day ingestion; led a team of 6.</li>
+                                <li>Built the processing framework: schema validation with PII masking, dedup/cleanse, CDC, and graph-based (GraphX Connected Components) patient identity resolution at 98% accuracy — cutting an 8-hour job to 45 minutes.</li>
+                                <li>Designed a Java/Spring Boot microservices layer with Redis + Cassandra caching at &lt;50ms p95 for 10K+ req/sec.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h3>Senior Software Engineer</h3>
+                                <span class="company">Amadeus Labs</span>
+                                <span class="period">Bangalore, India · Sep 2013 – Nov 2015</span>
+                            </div>
+                            <ul class="experience-details">
+                                <li>Built a Spark/Flume pipeline for central logging — ingesting and parsing semi-structured logs and traces with automated anomaly detection.</li>
+                                <li>Deployed a scalable Flume-based collection system converting logs to Parquet with schema enforcement for downstream analytics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-resume">
+                        <div class="skill-group">
+                            <h4>Core Strengths:</h4>
+                            <p>Distributed Systems Architecture, Real-Time Streaming, Data Platform Modernization, Performance Optimization</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Languages:</h4>
+                            <p>Java, Scala, Python, Golang</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Data Engineering:</h4>
+                            <p>Apache Spark (Batch &amp; Structured Streaming), Kafka, Flink, Delta Lake, Snowflake, Databricks, Airflow</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Databases:</h4>
+                            <p>Cassandra, HBase, PostgreSQL, MySQL, Redis</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Cloud Platforms:</h4>
+                            <p>AWS (S3, EMR, Kinesis, Redshift, Glue), Databricks (Unity Catalog, Delta Live Tables), Azure (ADF, Synapse)</p>
+                        </div>
+                        <div class="skill-group">
+                            <h4>DevOps &amp; Tools:</h4>
+                            <p>Kubernetes, Docker, Terraform, Jenkins, GitLab CI/CD, Elasticsearch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Frameworks &amp; Platforms</h2>
+                    <div class="projects-list">
+                        <div class="project-item">
+                            <h3>RTCM Streaming Framework</h3>
+                            <p class="project-tech">Spark Structured Streaming, Kafka</p>
+                            <p>
+                                Reusable event-processing platform running 500K events/sec at &lt;100ms p99 with exactly-once
+                                semantics and auto-scaling. Adopted by 3 teams, reducing time-to-production by 85%.
+                            </p>
+                        </div>
+
+                        <div class="project-item">
+                            <h3>Databricks Migration Framework</h3>
+                            <p class="project-tech">Databricks, Delta Lake, Unity Catalog</p>
+                            <p>
+                                Migration patterns and governance model used by 4 teams to move 80+ pipelines off
+                                Snowflake with zero downtime and a 50% cost reduction.
+                            </p>
+                        </div>
+
+                        <div class="project-item">
+                            <h3>Spark Performance Toolkit</h3>
+                            <p class="project-tech">Apache Spark, AQE</p>
+                            <p>
+                                Best practices and automated tuning scripts deployed across 40+ engineers — codifying
+                                data-skew handling, broadcast joins, and AQE tuning into repeatable runbooks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>Education</h2>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="education-header">
+                                <h3>B.Tech, Computer Science</h3>
+                                <span class="school">ICFAI University, Hyderabad</span>
+                                <span class="period">2003 – 2007 · CGPA 8.09/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
