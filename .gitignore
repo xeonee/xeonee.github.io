@@ -15,3 +15,6 @@ Gemfile.lock
 
 # Source resume (the generated PDF is committed, the docx is not)
 *.docx
+
+# Raw profile-photo upload (the web-sized images/profile.png is committed)
+images/me.png
