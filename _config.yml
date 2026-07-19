@@ -11,7 +11,7 @@ github: "https://github.com/xeonee"
 # baseurl stays empty. For a project repo (e.g. "portfolio"), set:
 #   baseurl: "/portfolio"
 url: "https://xeonee.github.io"
-baseurl: "/amardeep"
+baseurl: ""
 
 # ===== Build =====
 markdown: kramdown
